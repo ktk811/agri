@@ -14,7 +14,8 @@
 #         and a live list of nearby agro-shops.
 #      3. "Inventory Management" – allows the farmer to input crop produce and pesticide inventory.
 ###########################################
-
+import sys
+sys.path.append("/home/appuser/.local/lib/python3.12/site-packages")
 import streamlit as st
 import streamlit.components.v1 as components
 import requests
