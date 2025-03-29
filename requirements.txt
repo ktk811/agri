@@ -1,3 +1,4 @@
+pymongo
 earthengine-api
 google-auth
 google-auth-oauthlib
