@@ -127,7 +127,7 @@ def show_header():
 # 0. INITIALIZE EARTH ENGINE
 # ---------------------------
 try:
-    ee.Initialize(project='ee-soveetprusty')
+    ee.Initialize(project='ee-kartik081105')
 except Exception as e:
     st.error("Earth Engine initialization failed. Some features may not work.")
     # Optionally, you can set ee to None or a dummy object:
