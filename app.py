@@ -127,10 +127,10 @@ def show_header():
 # 0. INITIALIZE EARTH ENGINE
 # ---------------------------
 try:
-    ee.Initialize(project='ee-kartik081105')
+    ee.Initialize(project='ee-soveetprusty')
 except Exception as e:
-    #ee.Authenticate()
-    ee.Initialize(project='ee-kartik081105')
+    ee.Authenticate()
+    ee.Initialize(project='ee-soveetprusty')
 
 # ---------------------------
 # 1. SET UP MONGODB CONNECTION
@@ -532,5 +532,5 @@ def main():
     else:
         show_login()
 
-if __name__ == "__main__":
-    main()
+if _name_ == "_main_":
+    main()
