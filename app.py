@@ -129,7 +129,7 @@ def show_header():
 try:
     ee.Initialize(project='ee-kartik081105')
 except Exception as e:
-    ee.Authenticate()
+    #ee.Authenticate()
     ee.Initialize(project='ee-kartik081105')
 
 # ---------------------------
