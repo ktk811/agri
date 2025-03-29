@@ -15,12 +15,11 @@
 #      3. "Inventory Management" – allows the farmer to input crop produce and pesticide inventory.
 ###########################################
 import sys
-import pkg_resources
+import importlib.metadata
 
-installed_packages = {pkg.key for pkg in pkg_resources.working_set}
+installed_packages = {pkg.metadata["Name"].lower() for pkg in importlib.metadata.distributions()}
 if "earthengine-api" not in installed_packages:
     print("⚠️ Earth Engine API is NOT installed!")
-
 import ee  # This should work now
 import streamlit as st
 import streamlit.components.v1 as components
