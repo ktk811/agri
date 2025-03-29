@@ -129,8 +129,9 @@ def show_header():
 try:
     ee.Initialize(project='ee-soveetprusty')
 except Exception as e:
-    ee.Authenticate()
-    ee.Initialize(project='ee-soveetprusty')
+    st.error("Earth Engine initialization failed. Some features may not work.")
+    # Optionally, you can set ee to None or a dummy object:
+    # ee = None
 
 # ---------------------------
 # 1. SET UP MONGODB CONNECTION
@@ -532,5 +533,5 @@ def main():
     else:
         show_login()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
